@@ -9,9 +9,6 @@ namespace Exercitii_laborator_11
     /// </summary>
     class Tag
     {
-        public string Name { get; private set; }
-        public double NetPrice { get; private set; }
-        public Guid Id { get; private set; }
         private readonly StringBuilder productTag = new StringBuilder();
 
 
@@ -23,20 +20,9 @@ namespace Exercitii_laborator_11
         /// <param name="netPrice"> Pretul net al prodului</param>
         public Tag(string name, Guid id, double netPrice)
         {
-            this.Name = name;
-            this.Id = id;
-            this.NetPrice = netPrice;
-        }
-
-
-        /// <summary>
-        /// Creeaza eticheta produsului
-        /// </summary>
-        public void CreateTag()
-        {
-            productTag.AppendLine($"ID: {this.Id}");
-            productTag.AppendLine($"Nume produs: {this.Name}");
-            productTag.AppendLine($"Pret net: {NetPrice:N2} lei");
+            productTag.AppendLine($"ID: {id}");
+            productTag.AppendLine($"Nume produs: {name}");
+            productTag.AppendLine($"Pret net: {netPrice:N2} lei");
         }
 
 

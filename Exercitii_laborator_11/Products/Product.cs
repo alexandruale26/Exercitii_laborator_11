@@ -29,7 +29,6 @@ namespace Exercitii_laborator_11.Products
             this.GrossPrice = grossPrice;
             this.taxesCalculator = taxesCalculator;
             this.Tag = new Tag(this.Name, this.Id, this.taxesCalculator.ApplyTaxes(grossPrice));
-            Tag.CreateTag();
         }
     }
 }

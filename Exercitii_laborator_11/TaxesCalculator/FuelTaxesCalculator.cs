@@ -9,8 +9,8 @@ namespace Exercitii_laborator_11.TaxesCalculator
     internal class FuelTaxesCalculator: ITaxesCalculator
     {
         public double VATPercentage { get { return 19; } }
-        private readonly double fuelTax = 1.8d;
-        private readonly double roadTax = 1.3d;
+        private const double fuelTax = 1.8d;
+        private const double roadTax = 1.3d;
 
 
         public double ApplyTaxes(double price)
